@@ -43,7 +43,7 @@ state = {
 
 async componentDidMount() {
 
- const url = "http://localhost:9000/relay_0_CheckStatus"
+ const url = "http://localhost:9000/switch001_relay_0_CheckStatus"
  const response2 = await fetch(url); 
  const data =await response2.json(); 
 
@@ -68,7 +68,7 @@ else if (this.state.ps_01_relay_0=="false"){
  
  ////////////////////////////////////////////////////////////
 
- const url_1 = "http://localhost:9000/relay_1_CheckStatus"
+ const url_1 = "http://localhost:9000/switch001_relay_1_CheckStatus"
  const response2_1= await fetch(url_1); 
  const data_1 =await response2_1.json(); 
 
@@ -90,7 +90,7 @@ else if (this.state.ps_01_relay_1=="false"){
 
 /////////////////////////////////////////////////////////////
 
- const url_2 = "http://localhost:9000/relay_2_CheckStatus"
+ const url_2 = "http://localhost:9000/switch001_relay_2_CheckStatus"
  const response2_2= await fetch(url_2); 
  const data_2 =await response2_2.json(); 
 
@@ -112,7 +112,7 @@ else if (this.state.ps_01_relay_2=="false"){
 
 /////////////////////////////////////////////////////////////
 
- const url_3 = "http://localhost:9000/relay_3_CheckStatus"
+ const url_3 = "http://localhost:9000/switch001_relay_3_CheckStatus"
  const response2_3= await fetch(url_3); 
  const data_3 =await response2_3.json(); 
 
@@ -134,7 +134,7 @@ else if (this.state.ps_01_relay_3=="false"){
 
  /////////////////////////////////////////////////////////////
 
- const url_4 = "http://localhost:9000/relay_4_CheckStatus"
+ const url_4 = "http://localhost:9000/switch001_relay_4_CheckStatus"
  const response2_4= await fetch(url_4); 
  const data_4 =await response2_4.json(); 
 
@@ -156,7 +156,7 @@ else if (this.state.ps_01_relay_4=="false"){
 
 //////////////////////////////////////////////////////////////
 
- const url_5 = "http://localhost:9000/relay_5_CheckStatus"
+ const url_5 = "http://localhost:9000/switch001_relay_5_CheckStatus"
  const response2_5= await fetch(url_5); 
  const data_5 =await response2_5.json(); 
 
@@ -178,7 +178,7 @@ else if (this.state.ps_01_relay_5=="false"){
 
  /////////////////////////////////////////////////////////////
 
- const url_6 = "http://localhost:9000/relay_6_CheckStatus"
+ const url_6 = "http://localhost:9000/switch001_relay_6_CheckStatus"
  const response2_6= await fetch(url_6); 
  const data_6 =await response2_6.json(); 
 
@@ -200,7 +200,7 @@ else if (this.state.ps_01_relay_6=="false"){
 
  /////////////////////////////////////////////////////////////
 
- const url_7 = "http://localhost:9000/relay_7_CheckStatus"
+ const url_7 = "http://localhost:9000/switch001_relay_7_CheckStatus"
  const response2_7= await fetch(url_7); 
  const data_7 =await response2_7.json(); 
 
@@ -229,14 +229,14 @@ render(){
   function switch_clicky() {
     
     if (document.getElementById('temo').style.background=='green'){
-      const response1 = fetch("http://localhost:9000/relay_0_turnOFF")
+      const response1 = fetch("http://localhost:9000/switch001_relay_0_turnOFF")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
     }
 
     else if (document.getElementById('temo').style.background=='red'){
-      const response1 = fetch("http://localhost:9000/relay_0_turnON")
+      const response1 = fetch("http://localhost:9000/switch001_relay_0_turnON")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
@@ -250,14 +250,14 @@ render(){
   function switch_clicky1() {
 
     if (document.getElementById('temo1').style.background=='green'){
-      const response1 = fetch("http://localhost:9000/relay_1_turnOFF")
+      const response1 = fetch("http://localhost:9000/switch001_relay_1_turnOFF")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
     }
 
     else if (document.getElementById('temo1').style.background=='red'){
-      const response1 = fetch("http://localhost:9000/relay_1_turnON")
+      const response1 = fetch("http://localhost:9000/switch001_relay_1_turnON")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
@@ -271,14 +271,14 @@ render(){
   function switch_clicky2() {
 
     if (document.getElementById('temo2').style.background=='green'){
-      const response1 = fetch("http://localhost:9000/relay_2_turnOFF")
+      const response1 = fetch("http://localhost:9000/switch001_relay_2_turnOFF")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
     }
 
     else if (document.getElementById('temo2').style.background=='red'){
-      const response1 = fetch("http://localhost:9000/relay_2_turnON")
+      const response1 = fetch("http://localhost:9000/switch001_relay_2_turnON")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
@@ -292,14 +292,14 @@ render(){
   function switch_clicky3() {
 
     if (document.getElementById('temo3').style.background=='green'){
-      const response1 = fetch("http://localhost:9000/relay_3_turnOFF")
+      const response1 = fetch("http://localhost:9000/switch001_relay_3_turnOFF")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
     }
 
     else if (document.getElementById('temo3').style.background=='red'){
-      const response1 = fetch("http://localhost:9000/relay_3_turnON")
+      const response1 = fetch("http://localhost:9000/switch001_relay_3_turnON")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
@@ -314,14 +314,14 @@ render(){
   function switch_clicky4() {
 
     if (document.getElementById('temo4').style.background=='green'){
-      const response1 = fetch("http://localhost:9000/relay_4_turnOFF")
+      const response1 = fetch("http://localhost:9000/switch001_relay_4_turnOFF")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
     }
 
     else if (document.getElementById('temo4').style.background=='red'){
-      const response1 = fetch("http://localhost:9000/relay_4_turnON")
+      const response1 = fetch("http://localhost:9000/switch001_relay_4_turnON")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
@@ -335,14 +335,14 @@ render(){
   function switch_clicky5() {
 
     if (document.getElementById('temo5').style.background=='green'){
-      const response1 = fetch("http://localhost:9000/relay_5_turnOFF")
+      const response1 = fetch("http://localhost:9000/switch001_relay_5_turnOFF")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
     }
 
     else if (document.getElementById('temo5').style.background=='red'){
-      const response1 = fetch("http://localhost:9000/relay_5_turnON")
+      const response1 = fetch("http://localhost:9000/switch001_relay_5_turnON")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
@@ -356,14 +356,14 @@ render(){
   function switch_clicky6() {
 
     if (document.getElementById('temo6').style.background=='green'){
-      const response1 = fetch("http://localhost:9000/relay_6_turnOFF")
+      const response1 = fetch("http://localhost:9000/switch001_relay_6_turnOFF")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
     }
 
     else if (document.getElementById('temo6').style.background=='red'){
-      const response1 = fetch("http://localhost:9000/relay_6_turnON")
+      const response1 = fetch("http://localhost:9000/switch001_relay_6_turnON")
      // alert('Outlet will now change state ');
       window.location.href="http://localhost:3000";
       return 0;
@@ -377,14 +377,14 @@ render(){
     function switch_clicky7() {
 
       if (document.getElementById('temo7').style.background=='green'){
-        const response1 = fetch("http://localhost:9000/relay_7_turnOFF")
+        const response1 = fetch("http://localhost:9000/switch001_relay_7_turnOFF")
        // alert('Outlet will now change state ');
         window.location.href="http://localhost:3000";
         return 0;
       }
   
       else if (document.getElementById('temo7').style.background=='red'){
-        const response1 = fetch("http://localhost:9000/relay_7_turnON")
+        const response1 = fetch("http://localhost:9000/switch001_relay_7_turnON")
        // alert('Outlet will now change state ');
         window.location.href="http://localhost:3000";
         return 0;
@@ -396,25 +396,25 @@ render(){
   }
 
   function switch_clicky8() {
-    fetch("http://localhost:9000/relay_0_turnOFF")
-    fetch("http://localhost:9000/relay_1_turnOFF")
-    fetch("http://localhost:9000/relay_2_turnOFF")
-    fetch("http://localhost:9000/relay_3_turnOFF")
-    fetch("http://localhost:9000/relay_4_turnOFF")
-    fetch("http://localhost:9000/relay_5_turnOFF")
-    fetch("http://localhost:9000/relay_6_turnOFF")
-    fetch("http://localhost:9000/relay_7_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_0_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_1_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_2_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_3_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_4_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_5_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_6_turnOFF")
+    fetch("http://localhost:9000/switch001_relay_7_turnOFF")
 
     window.location.href="http://localhost:3000";
 
-    fetch("http://localhost:9000/relay_0_turnON")
-    fetch("http://localhost:9000/relay_1_turnON")
-    fetch("http://localhost:9000/relay_2_turnON")
-    fetch("http://localhost:9000/relay_3_turnON")
-    fetch("http://localhost:9000/relay_4_turnON")
-    fetch("http://localhost:9000/relay_5_turnON")
-    fetch("http://localhost:9000/relay_6_turnON")
-    fetch("http://localhost:9000/relay_7_turnON")
+    fetch("http://localhost:9000/switch001_relay_0_turnON")
+    fetch("http://localhost:9000/switch001_relay_1_turnON")
+    fetch("http://localhost:9000/switch001_relay_2_turnON")
+    fetch("http://localhost:9000/switch001_relay_3_turnON")
+    fetch("http://localhost:9000/switch001_relay_4_turnON")
+    fetch("http://localhost:9000/switch001_relay_5_turnON")
+    fetch("http://localhost:9000/switch001_relay_6_turnON")
+    fetch("http://localhost:9000/switch001_relay_7_turnON")
 
     window.location.href="http://localhost:3000";
 
